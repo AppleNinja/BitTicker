@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Pair Details View Controller-->
+        <scene sceneID="0To-0f-83r">
+            <objects>
+                <viewController storyboardIdentifier="PairDetailiViewController" id="9ZB-ro-DSq" customClass="PairDetailsViewController" customModule="BitTicker" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xzk-NZ-cYR">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="details_screen" translatesAutoresizingMaskIntoConstraints="NO" id="k6I-sc-gy9">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mz0-Sm-HKR">
+                                <rect key="frame" x="16" y="118" width="343" height="167"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="167" id="Xn9-jP-Fde"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="50"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Last Price: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7OP-Zf-TW9">
+                                <rect key="frame" x="16" y="412" width="343" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="eHR-M0-JYB"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lowest ask: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DZh-zA-rPu">
+                                <rect key="frame" x="16" y="460" width="343" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="88F-uY-p9Q"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Highest ask: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fgb-uS-MN9">
+                                <rect key="frame" x="16" y="508" width="343" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Kwh-Vc-6cR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lowest last 24h: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hDn-sF-H3c">
+                                <rect key="frame" x="16" y="556" width="343" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="evd-RA-Oe2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Highest last 24h: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BkZ-Au-wH4">
+                                <rect key="frame" x="16" y="604" width="343" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="2dd-kU-nZt"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Percent last 24h: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zig-OP-auP">
+                                <rect key="frame" x="16" y="652" width="343" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="kvN-fA-Bkn"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="BkZ-Au-wH4" firstAttribute="top" secondItem="hDn-sF-H3c" secondAttribute="bottom" constant="8" symbolic="YES" id="0KR-AU-7ZP"/>
+                            <constraint firstItem="k6I-sc-gy9" firstAttribute="trailing" secondItem="Bgw-Fd-ddy" secondAttribute="trailing" id="8pE-K5-bVY"/>
+                            <constraint firstItem="DZh-zA-rPu" firstAttribute="trailing" secondItem="Fgb-uS-MN9" secondAttribute="trailing" id="9In-nM-DVI"/>
+                            <constraint firstItem="7OP-Zf-TW9" firstAttribute="trailing" secondItem="DZh-zA-rPu" secondAttribute="trailing" id="AHA-Bs-XeO"/>
+                            <constraint firstItem="BkZ-Au-wH4" firstAttribute="leading" secondItem="zig-OP-auP" secondAttribute="leading" id="BoC-7O-Gh7"/>
+                            <constraint firstItem="hDn-sF-H3c" firstAttribute="leading" secondItem="BkZ-Au-wH4" secondAttribute="leading" id="CEG-9Z-UbK"/>
+                            <constraint firstItem="k6I-sc-gy9" firstAttribute="centerX" secondItem="Mz0-Sm-HKR" secondAttribute="centerX" id="COM-qI-Nj5"/>
+                            <constraint firstItem="DZh-zA-rPu" firstAttribute="top" secondItem="7OP-Zf-TW9" secondAttribute="bottom" constant="8" symbolic="YES" id="EVy-aJ-Gk6"/>
+                            <constraint firstItem="k6I-sc-gy9" firstAttribute="leading" secondItem="xzk-NZ-cYR" secondAttribute="leading" id="I80-lD-Fbp"/>
+                            <constraint firstItem="hDn-sF-H3c" firstAttribute="trailing" secondItem="BkZ-Au-wH4" secondAttribute="trailing" id="Jri-t9-G8Q"/>
+                            <constraint firstItem="zig-OP-auP" firstAttribute="top" secondItem="BkZ-Au-wH4" secondAttribute="bottom" constant="8" symbolic="YES" id="LEi-ov-MOA"/>
+                            <constraint firstItem="hDn-sF-H3c" firstAttribute="top" secondItem="Fgb-uS-MN9" secondAttribute="bottom" constant="8" symbolic="YES" id="RrM-rw-Whp"/>
+                            <constraint firstItem="Fgb-uS-MN9" firstAttribute="leading" secondItem="hDn-sF-H3c" secondAttribute="leading" id="T8e-Lx-UWb"/>
+                            <constraint firstItem="Mz0-Sm-HKR" firstAttribute="trailing" secondItem="7OP-Zf-TW9" secondAttribute="trailing" id="TaV-ib-s9P"/>
+                            <constraint firstItem="DZh-zA-rPu" firstAttribute="leading" secondItem="Fgb-uS-MN9" secondAttribute="leading" id="VhR-uz-aKV"/>
+                            <constraint firstItem="Fgb-uS-MN9" firstAttribute="trailing" secondItem="hDn-sF-H3c" secondAttribute="trailing" id="XqW-kX-ywr"/>
+                            <constraint firstItem="BkZ-Au-wH4" firstAttribute="trailing" secondItem="zig-OP-auP" secondAttribute="trailing" id="aX6-CA-K24"/>
+                            <constraint firstItem="Mz0-Sm-HKR" firstAttribute="leading" secondItem="xzk-NZ-cYR" secondAttribute="leadingMargin" id="adk-J0-RCF"/>
+                            <constraint firstAttribute="bottom" secondItem="k6I-sc-gy9" secondAttribute="bottom" id="cHh-8K-Cyo"/>
+                            <constraint firstItem="Fgb-uS-MN9" firstAttribute="top" secondItem="DZh-zA-rPu" secondAttribute="bottom" constant="8" symbolic="YES" id="fba-fU-gWC"/>
+                            <constraint firstItem="7OP-Zf-TW9" firstAttribute="leading" secondItem="DZh-zA-rPu" secondAttribute="leading" id="gVT-r4-wJK"/>
+                            <constraint firstItem="k6I-sc-gy9" firstAttribute="top" secondItem="xzk-NZ-cYR" secondAttribute="top" id="hqq-sC-3C3"/>
+                            <constraint firstItem="Mz0-Sm-HKR" firstAttribute="top" secondItem="Bgw-Fd-ddy" secondAttribute="top" constant="74" id="mkr-AX-ks7"/>
+                            <constraint firstItem="Bgw-Fd-ddy" firstAttribute="bottom" secondItem="zig-OP-auP" secondAttribute="bottom" constant="86" id="o0e-Io-ETq"/>
+                            <constraint firstItem="Mz0-Sm-HKR" firstAttribute="leading" secondItem="7OP-Zf-TW9" secondAttribute="leading" id="x3F-Zf-I6K"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Bgw-Fd-ddy"/>
+                    </view>
+                    <connections>
+                        <outlet property="highestAskLabel" destination="Fgb-uS-MN9" id="Dql-co-nKL"/>
+                        <outlet property="highestLastLabel" destination="BkZ-Au-wH4" id="Gou-nZ-asJ"/>
+                        <outlet property="lastPriceLabel" destination="7OP-Zf-TW9" id="c8I-d5-olf"/>
+                        <outlet property="lowestAskLabel" destination="DZh-zA-rPu" id="c5a-O2-uKc"/>
+                        <outlet property="lowestLastLabel" destination="hDn-sF-H3c" id="h6h-Sa-C0u"/>
+                        <outlet property="pairLabel" destination="Mz0-Sm-HKR" id="9OL-9C-44Q"/>
+                        <outlet property="percentLabel" destination="zig-OP-auP" id="dht-id-FRa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kBa-Lc-lJE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-130.40000000000001" y="-56.896551724137936"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="details_screen" width="132" height="234"/>
+    </resources>
+</document>
